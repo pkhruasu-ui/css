@@ -1,0 +1,17 @@
+label.img-radio-control-group {
+	& > input[type="radio"].img-radio {
+		display: none;
+	}
+
+	& > input[type="radio"].img-radio {
+		& + img.img-radio-control {
+			width : 100px;
+			height: 200px;
+			border: 2px solid transparent;
+		}
+
+		&:checked + img.img-radio-control {
+			border : 2px solid blue;
+		}
+	}
+}

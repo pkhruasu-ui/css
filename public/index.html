@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Useful CSS</title>
+	<link rel="stylesheet/less" type="text/css" href="./css/img-radio.less"></link>	
+	<link rel="stylesheet/less" type="text/css" href="./css/toggle.less"></link>	
+	<!-- set options before less.js script -->
+	<script>
+	  less = {
+	    env: "development",
+	    async: false,
+	    fileAsync: false,
+	    poll: 1000,
+	    functions: {},
+	    dumpLineNumbers: "comments",
+	    relativeUrls: false,
+	    rootpath: ":/a.com/"
+	  };
+	</script>
+	<script src="bower_components/less/dist/less.js" type="text/javascript"></script>
+</head>
+<body>
+	<dir>
+		<h5>Image radio</h5>
+		<label class="img-radio-control-group">
+			<input type="radio" class="img-radio" name="choice"></input>
+			<img class="img-radio-control" src="./image/sample.png" value="1">
+		</label>
+		<label class="img-radio-control-group">
+			<input type="radio" class="img-radio" name="choice"></input>
+			<img class="img-radio-control" src="./image/sample.png"value="2">
+		</label>
+		<label class="img-radio-control-group">
+			<input type="radio" class="img-radio" name="choice"></input>
+			<img class="img-radio-control" src="./image/sample.png" value="3">
+		</label>
+	</dir>
+	<dir>
+		<h5>Toggle</h5>
+		<!-- Need to be in its own div group -->
+		<div>
+			<input type="checkbox" class="toggle" name="toggle-sample" id="toggle-sample"></input>
+			<label class="toggle-control small" for="toggle-sample"></label>	
+		</div>
+		<div>
+			<input type="checkbox" class="toggle" name="toggle-sample2" id="toggle-sample2"></input>
+			<label class="toggle-control" for="toggle-sample2"></label>	
+		</div>
+	</dir>
+</body>
+</html>
